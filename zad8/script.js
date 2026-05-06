@@ -1,0 +1,2 @@
+// 77442 Volodymyr Doroshevych - zad8
+backendForm.addEventListener('submit',async e=>{e.preventDefault();const data=Object.fromEntries(new FormData(backendForm));const res=await fetch('/api/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});status.textContent=res.ok?'Dane wysłane i zapisane na serwerze.':'Błąd wysyłki danych.';if(res.ok)backendForm.reset();});
