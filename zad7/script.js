@@ -1,2 +1,0 @@
-// 77442 Volodymyr Doroshevych - zad7
-const key='notes-77442';let notes=JSON.parse(localStorage.getItem(key)||'[]');function save(){localStorage.setItem(key,JSON.stringify(notes))}function render(){noteList.innerHTML=notes.map((n,i)=>`<li>${n} <button onclick="removeNote(${i})">Usuń</button></li>`).join('')}function removeNote(i){notes.splice(i,1);save();render()}noteForm.addEventListener('submit',e=>{e.preventDefault();const v=noteInput.value.trim();if(v){notes.push(v);noteInput.value='';save();render()}});render();
