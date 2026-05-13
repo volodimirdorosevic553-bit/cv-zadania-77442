@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie 6 - 77442</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Numer indeksu w kodzie: 77442 -->
+  <header class="header">
+    <p class="index">Numer indeksu: 77442</p>
+    <h1>Portfolio CV</h1>
+    <p>Pobieranie danych z pliku JSON przez fetch().</p>
+    <button id="themeBtn" type="button">Zmień motyw green / red</button>
+    <button id="toggleProjectsBtn" type="button">Pokaż / ukryj projekty</button>
+  </header>
 
+  <main class="container">
+    <section class="section">
+      <h2>O mnie</h2>
+      <p>
+        Nazywam się Volodymyr Doroshevych. To jest projekt CV/portfolio wykonany w HTML, CSS i JavaScript.
+        Projekt rozwija się krok po kroku przez zadania 4–8.
+      </p>
+    </section>
+
+    <section class="section" id="projectsSection">
+      <h2>Zadanie 4 — interakcja JavaScript</h2>
+      <p>Ta sekcja może być pokazana lub ukryta przyciskiem.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Zmiana motywu</h3>
+          <p>Przycisk zmienia kolor strony z zielonego na czerwony.</p>
+        </article>
+        <article class="card">
+          <h3>Ukrywanie treści</h3>
+          <p>Drugi przycisk pokazuje i ukrywa sekcję projektów.</p>
+        </article>
+        <article class="card">
+          <h3>Numer indeksu</h3>
+          <p>77442</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Zadanie 5 — formularz i walidacja</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Imię</label>
+        <input id="name" type="text" placeholder="Wpisz imię">
+        <p class="error" id="nameError"></p>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="email@example.com">
+        <p class="error" id="emailError"></p>
+
+        <label for="message">Wiadomość</label>
+        <textarea id="message" rows="4" placeholder="Minimum 10 znaków"></textarea>
+        <p class="error" id="messageError"></p>
+
+        <button type="submit">Sprawdź formularz</button>
+      </form>
+      <div id="formResult"></div>
+    </section>
+
+    <section class="section">
+      <h2>Zadanie 6 — dane z JSON przez fetch()</h2>
+      <p>Dane poniżej są pobierane z osobnego pliku <strong>data.json</strong>.</p>
+      <div class="grid" id="jsonProjects"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    Projekt wykonany przez studenta 77442
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
