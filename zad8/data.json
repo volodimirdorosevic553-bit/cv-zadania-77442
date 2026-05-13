@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "title": "Portfolio CV",
+      "description": "Responsywna strona CV wykonana w HTML, CSS i JavaScript."
+    },
+    {
+      "title": "Formularz kontaktowy",
+      "description": "Formularz z walidacją danych po stronie przeglądarki."
+    },
+    {
+      "title": "Dane JSON",
+      "description": "Dynamiczne tworzenie elementów strony z pliku data.json."
+    }
+  ]
+}
